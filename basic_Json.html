@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utj-8">
+    <meta namae="viewoprt" content="width=device-width,initial-scale=1.0" <title>Document</title>
+</head>
+<!-- 
+การเข้าถึงตัวแปร ให้สังเกตเครื่องหมาย ถ้าเป็น [ ] คืออาเรย์ ให้ใส่อินเด็กซ์ ถ้าเป็นเครื่องหมาย { } คือดิกชันนารี ให้ใส่ คีย์
+แบบฟอร์ม Json คีย์จะต้องมีเครื่องหมาย ' ' หรือ " " ใส่ในคีย์ เสมอ -->
+<body>
+    <script>
+
+        let myJSON = [{
+            "Category": "Tutorials",
+            "Articles": [
+                {
+                    "Name": "json_Tuts",
+                    "Shared_on": [{
+                        "SocialNetwork": "Facebook"
+                    },
+                    {
+                        "SocialNetwork": "Twitter"
+                    },
+                    {
+                        "SocialNetwork": "Instagram"
+                    }
+                    ]
+                },
+                {
+                    "Name": "js_Tuts",
+                    "Shared_on": [
+                        {
+                            "socialNetwork": "He_Five"
+                        },
+                        {
+                            "SocialNetwork": "Wach_App"
+                        },
+                        {
+                            "SocialNetwork": "Perl"
+                        }
+                    ]
+                }
+            ]
+        }]
+        console.log(myJSON[0]["Articles"][0]["Shared_on"][2]['SocialNetwork']);
+    </script>
+</body>
+<
